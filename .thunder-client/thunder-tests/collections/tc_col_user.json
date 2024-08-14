@@ -1,0 +1,270 @@
+{
+    "_id": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+    "colName": "user",
+    "created": "2023-07-09T09:23:24.608Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "27a9313f-e275-443c-aefe-53d7abd86c26",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "Register",
+            "url": "/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-09T09:23:46.702Z",
+            "modified": "2023-07-09T13:35:02.795Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Test Account\",\n  \"password\": \"password\",\n  \"email\": \"test2@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "05407ea7-3b43-4807-8ec8-553f8bd026c3",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "Login",
+            "url": "/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-09T09:24:30.400Z",
+            "modified": "2023-08-13T14:11:02.107Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"password\",\n  \"email\": \"test2@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a588e533-6720-432c-a125-481c00289e78",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "Get User",
+            "url": "/user/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-09T09:25:08.438Z",
+            "modified": "2023-08-13T15:03:48.017Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a0c89539-45a7-4301-9bab-510dd0a4cf6b",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "Update User",
+            "url": "/user/profile",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-07-09T10:04:17.735Z",
+            "modified": "2023-07-14T07:53:12.842Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"about\": \"Hello World\",\n  \"languages\": [\"Twi\"]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwic2Vla2VyX2lkIjoxLCJlbWFpbCI6Im5hdGhhbm9ybWFuZWwxQGdtYWlsLmNvbSIsImV4cCI6MTY4OTQwMzExNX0.DITwCfe-uBEPyfLTBnHBCCILQrk9UHTSgxRzi4Owld0"
+            },
+            "tests": []
+        },
+        {
+            "_id": "cbbfe3fd-8e42-4d0b-9bb3-5613741664dd",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "Add Experience",
+            "url": "/user/experience",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-07-09T12:12:19.344Z",
+            "modified": "2023-07-09T12:24:54.409Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"company_name\": \"Wookein\",\n  \"job_title\": \"Cleaner\",\n  \"start_date\": \"2023-05-01\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d838c624-79f6-4825-9d9e-11aad3dfe6f2",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "Create Skills",
+            "url": "/user/create_skill",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-07-09T12:37:18.917Z",
+            "modified": "2023-07-14T07:08:18.945Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"skills\": [\"golang\", \"gorm\"]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwic2Vla2VyX2lkIjoyLCJlbWFpbCI6InRlc3QyQGVtYWlsLmNvbSIsImV4cCI6MTY4OTQwNDc1OH0.cAGTYbW49kuXowQOlQYXxSgMekt7JMAxbI4hsNjhL7Q"
+            },
+            "tests": []
+        },
+        {
+            "_id": "68017857-0338-4884-af2c-7289b9992373",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "Add Skills",
+            "url": "/user/skill",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-07-09T12:47:59.365Z",
+            "modified": "2023-08-13T15:03:34.859Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"skills\": [180,181,541]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ad1117eb-83d3-4bc0-bbfa-6fe2f85a4786",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "uploadResume",
+            "url": "/user/upload_resume",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-07-14T07:25:34.210Z",
+            "modified": "2023-07-14T07:26:47.027Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "..\\..\\..\\..\\..\\..\\Downloads\\Documents\\Nathan Kulewoshie_CV.pdf"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwic2Vla2VyX2lkIjoxLCJlbWFpbCI6Im5hdGhhbm9ybWFuZWwxQGdtYWlsLmNvbSIsImV4cCI6MTY4OTQwMzExNX0.DITwCfe-uBEPyfLTBnHBCCILQrk9UHTSgxRzi4Owld0"
+            },
+            "tests": []
+        },
+        {
+            "_id": "d07efa0d-f555-4854-8bbf-0e3c57e9cf20",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "addLanguage",
+            "url": "",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-07-14T07:33:53.129Z",
+            "modified": "2023-07-14T07:33:53.129Z",
+            "headers": []
+        },
+        {
+            "_id": "c2600882-a5c0-424b-913f-a1ecc8f49ee7",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "Upload Image",
+            "url": "/user/image",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-07-24T13:09:20.532Z",
+            "modified": "2023-07-24T13:15:12.468Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "img",
+                        "value": "../../test.png"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwic2Vla2VyX2lkIjoxLCJlbWFpbCI6InRlc3QyQGVtYWlsLmNvbSIsImV4cCI6MTY5MDI5MDU0N30.k2948u0dSQ7ujba82jMxqq86vOTpqyHE7r2mYNNKpUk"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e4320c5b-5d4a-4f62-88cc-771657443e6c",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "Get Skills",
+            "url": "/user/skills?q=teach",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-08-13T14:21:23.979Z",
+            "modified": "2023-08-13T15:20:30.221Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "teach",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "033339c7-02a6-47ad-823b-4fcbe238b5ef",
+            "colId": "b91fa4a5-e0b0-42af-9791-e977fe155e5b",
+            "containerId": "",
+            "name": "Get Recommendations",
+            "url": "/user/recommend_skills?limit=200",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2023-08-13T15:12:27.500Z",
+            "modified": "2023-08-13T15:19:27.440Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "200",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwic2Vla2VyX2lkIjoxLCJlbWFpbCI6InRlc3QyQGVtYWlsLmNvbSIsImV4cCI6MTY5MjAyNDQwNn0.fWbuD7KMFufpOWI7nziM9n3_gPKvHJeFw9nLWeaR6IA"
+        },
+        "options": {
+            "baseUrl": "http://localhost:3000"
+        }
+    }
+}
